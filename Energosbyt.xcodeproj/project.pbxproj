@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		658FE14B5089410D453DCD53 /* Pods_Energosbyt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4ECD7D85C21530968ECDB8 /* Pods_Energosbyt.framework */; };
+		78246B6C23F9E63400439F20 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78246B6B23F9E63400439F20 /* ServiceLayer.swift */; };
+		78246B6F23F9F9BD00439F20 /* IAlertVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78246B6E23F9F9BD00439F20 /* IAlertVCDelegate.swift */; };
+		78246B7123FA051300439F20 /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78246B7023FA051300439F20 /* Ext+UIViewController.swift */; };
+		78246B7323FA08E000439F20 /* KeyboardBehaviorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78246B7223FA08E000439F20 /* KeyboardBehaviorHandler.swift */; };
+		78246B7523FA0F4100439F20 /* Ext+UIAppliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78246B7423FA0F4100439F20 /* Ext+UIAppliation.swift */; };
+		784EC98E23F84C6E006E92DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC98D23F84C6E006E92DD /* AppDelegate.swift */; };
+		784EC99223F84C6E006E92DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC99123F84C6E006E92DD /* ViewController.swift */; };
+		784EC99523F84C6E006E92DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784EC99323F84C6E006E92DD /* Main.storyboard */; };
+		784EC99723F84C70006E92DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784EC99623F84C70006E92DD /* Assets.xcassets */; };
+		784EC99A23F84C70006E92DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784EC99823F84C70006E92DD /* LaunchScreen.storyboard */; };
+		784EC9C223F8501A006E92DD /* HttpRpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC9C123F8501A006E92DD /* HttpRpc.swift */; };
+		784EC9C523F850BA006E92DD /* Ext+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC9C423F850BA006E92DD /* Ext+Alamofire.swift */; };
+		784EC9C723F86973006E92DD /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC9C623F86973006E92DD /* Ext+String.swift */; };
+		784EC9CA23F869C5006E92DD /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC9C923F869C5006E92DD /* UserInfo.swift */; };
+		784EC9CC23F87C1F006E92DD /* Ext+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC9CB23F87C1F006E92DD /* Ext+Double.swift */; };
+		784EC9CE23F88C96006E92DD /* TextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC9CD23F88C96006E92DD /* TextProvider.swift */; };
+		784EC9D023F8A570006E92DD /* Measures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC9CF23F8A570006E92DD /* Measures.swift */; };
+		784EC9D223F8A892006E92DD /* Ext+Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EC9D123F8A892006E92DD /* Ext+Document.swift */; };
+		786B5DA223FC802E0044F218 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786B5DA123FC802E0044F218 /* Measure.swift */; };
+		786B5DA423FC843F0044F218 /* MeasureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 786B5DA323FC843F0044F218 /* MeasureView.xib */; };
+		786B5DA623FC845F0044F218 /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786B5DA523FC845F0044F218 /* MeasureView.swift */; };
+		786B5DA923FC8F1B0044F218 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786B5DA823FC8F1B0044F218 /* XibView.swift */; };
+		786B5DAC23FC8F540044F218 /* IXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786B5DAB23FC8F540044F218 /* IXib.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78246B6B23F9E63400439F20 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		78246B6E23F9F9BD00439F20 /* IAlertVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAlertVCDelegate.swift; sourceTree = "<group>"; };
+		78246B7023FA051300439F20 /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
+		78246B7223FA08E000439F20 /* KeyboardBehaviorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBehaviorHandler.swift; sourceTree = "<group>"; };
+		78246B7423FA0F4100439F20 /* Ext+UIAppliation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIAppliation.swift"; sourceTree = "<group>"; };
+		784EC98A23F84C6E006E92DD /* Energosbyt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Energosbyt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		784EC98D23F84C6E006E92DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		784EC99123F84C6E006E92DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		784EC99423F84C6E006E92DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		784EC99623F84C70006E92DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		784EC99923F84C70006E92DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		784EC99B23F84C70006E92DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784EC9C123F8501A006E92DD /* HttpRpc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRpc.swift; sourceTree = "<group>"; };
+		784EC9C423F850BA006E92DD /* Ext+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Alamofire.swift"; sourceTree = "<group>"; };
+		784EC9C623F86973006E92DD /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
+		784EC9C923F869C5006E92DD /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		784EC9CB23F87C1F006E92DD /* Ext+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Double.swift"; sourceTree = "<group>"; };
+		784EC9CD23F88C96006E92DD /* TextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProvider.swift; sourceTree = "<group>"; };
+		784EC9CF23F8A570006E92DD /* Measures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measures.swift; sourceTree = "<group>"; };
+		784EC9D123F8A892006E92DD /* Ext+Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Document.swift"; sourceTree = "<group>"; };
+		786B5DA123FC802E0044F218 /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		786B5DA323FC843F0044F218 /* MeasureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasureView.xib; sourceTree = "<group>"; };
+		786B5DA523FC845F0044F218 /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+		786B5DA823FC8F1B0044F218 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		786B5DAB23FC8F540044F218 /* IXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IXib.swift; sourceTree = "<group>"; };
+		B7CDD51EF9D468A9AC4FA7AD /* Pods-Energosbyt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Energosbyt.debug.xcconfig"; path = "Target Support Files/Pods-Energosbyt/Pods-Energosbyt.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4ECD7D85C21530968ECDB8 /* Pods_Energosbyt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Energosbyt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF427503E11FAFE2648BBF5 /* Pods-Energosbyt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Energosbyt.release.xcconfig"; path = "Target Support Files/Pods-Energosbyt/Pods-Energosbyt.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		784EC98723F84C6E006E92DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658FE14B5089410D453DCD53 /* Pods_Energosbyt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A4D5CA2E759B31B8D7D77BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF4ECD7D85C21530968ECDB8 /* Pods_Energosbyt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77AFF6962687D5E29F32E689 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7CDD51EF9D468A9AC4FA7AD /* Pods-Energosbyt.debug.xcconfig */,
+				CEF427503E11FAFE2648BBF5 /* Pods-Energosbyt.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78246B6D23F9F9AA00439F20 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				78246B6E23F9F9BD00439F20 /* IAlertVCDelegate.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		784EC98123F84C6E006E92DD = {
+			isa = PBXGroup;
+			children = (
+				784EC98C23F84C6E006E92DD /* Energosbyt */,
+				784EC98B23F84C6E006E92DD /* Products */,
+				77AFF6962687D5E29F32E689 /* Pods */,
+				1A4D5CA2E759B31B8D7D77BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		784EC98B23F84C6E006E92DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				784EC98A23F84C6E006E92DD /* Energosbyt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		784EC98C23F84C6E006E92DD /* Energosbyt */ = {
+			isa = PBXGroup;
+			children = (
+				784EC9C823F869B5006E92DD /* Entities */,
+				784EC9C323F850AA006E92DD /* Extensions */,
+				78246B6D23F9F9AA00439F20 /* Interface */,
+				784EC9C123F8501A006E92DD /* HttpRpc.swift */,
+				78246B6B23F9E63400439F20 /* ServiceLayer.swift */,
+				78246B7223FA08E000439F20 /* KeyboardBehaviorHandler.swift */,
+				784EC9CD23F88C96006E92DD /* TextProvider.swift */,
+				784EC98D23F84C6E006E92DD /* AppDelegate.swift */,
+				786B5DAA23FC8F270044F218 /* UI */,
+				784EC99623F84C70006E92DD /* Assets.xcassets */,
+				784EC99823F84C70006E92DD /* LaunchScreen.storyboard */,
+				784EC99B23F84C70006E92DD /* Info.plist */,
+			);
+			path = Energosbyt;
+			sourceTree = "<group>";
+		};
+		784EC9C323F850AA006E92DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				784EC9C423F850BA006E92DD /* Ext+Alamofire.swift */,
+				784EC9D123F8A892006E92DD /* Ext+Document.swift */,
+				784EC9C623F86973006E92DD /* Ext+String.swift */,
+				784EC9CB23F87C1F006E92DD /* Ext+Double.swift */,
+				78246B7023FA051300439F20 /* Ext+UIViewController.swift */,
+				78246B7423FA0F4100439F20 /* Ext+UIAppliation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		784EC9C823F869B5006E92DD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				784EC9C923F869C5006E92DD /* UserInfo.swift */,
+				784EC9CF23F8A570006E92DD /* Measures.swift */,
+				786B5DA123FC802E0044F218 /* Measure.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		786B5DA723FC847F0044F218 /* MeasureView */ = {
+			isa = PBXGroup;
+			children = (
+				786B5DA523FC845F0044F218 /* MeasureView.swift */,
+				786B5DA323FC843F0044F218 /* MeasureView.xib */,
+			);
+			path = MeasureView;
+			sourceTree = "<group>";
+		};
+		786B5DAA23FC8F270044F218 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				786B5DA723FC847F0044F218 /* MeasureView */,
+				786B5DA823FC8F1B0044F218 /* XibView.swift */,
+				786B5DAB23FC8F540044F218 /* IXib.swift */,
+				784EC99123F84C6E006E92DD /* ViewController.swift */,
+				784EC99323F84C6E006E92DD /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		784EC98923F84C6E006E92DD /* Energosbyt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784EC99E23F84C70006E92DD /* Build configuration list for PBXNativeTarget "Energosbyt" */;
+			buildPhases = (
+				2BD63097B28766C89BDA14BB /* [CP] Check Pods Manifest.lock */,
+				784EC98623F84C6E006E92DD /* Sources */,
+				784EC98723F84C6E006E92DD /* Frameworks */,
+				784EC98823F84C6E006E92DD /* Resources */,
+				D3CB6CA9A90E4FFBC1A6F18F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Energosbyt;
+			productName = Energosbyt;
+			productReference = 784EC98A23F84C6E006E92DD /* Energosbyt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		784EC98223F84C6E006E92DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					784EC98923F84C6E006E92DD = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 784EC98523F84C6E006E92DD /* Build configuration list for PBXProject "Energosbyt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 784EC98123F84C6E006E92DD;
+			productRefGroup = 784EC98B23F84C6E006E92DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				784EC98923F84C6E006E92DD /* Energosbyt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		784EC98823F84C6E006E92DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784EC99A23F84C70006E92DD /* LaunchScreen.storyboard in Resources */,
+				786B5DA423FC843F0044F218 /* MeasureView.xib in Resources */,
+				784EC99723F84C70006E92DD /* Assets.xcassets in Resources */,
+				784EC99523F84C6E006E92DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BD63097B28766C89BDA14BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Energosbyt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3CB6CA9A90E4FFBC1A6F18F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Energosbyt/Pods-Energosbyt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Energosbyt/Pods-Energosbyt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Energosbyt/Pods-Energosbyt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		784EC98623F84C6E006E92DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784EC99223F84C6E006E92DD /* ViewController.swift in Sources */,
+				78246B7323FA08E000439F20 /* KeyboardBehaviorHandler.swift in Sources */,
+				784EC9C223F8501A006E92DD /* HttpRpc.swift in Sources */,
+				784EC9C523F850BA006E92DD /* Ext+Alamofire.swift in Sources */,
+				784EC9CC23F87C1F006E92DD /* Ext+Double.swift in Sources */,
+				78246B7523FA0F4100439F20 /* Ext+UIAppliation.swift in Sources */,
+				784EC9D023F8A570006E92DD /* Measures.swift in Sources */,
+				784EC9C723F86973006E92DD /* Ext+String.swift in Sources */,
+				784EC9D223F8A892006E92DD /* Ext+Document.swift in Sources */,
+				78246B7123FA051300439F20 /* Ext+UIViewController.swift in Sources */,
+				786B5DAC23FC8F540044F218 /* IXib.swift in Sources */,
+				786B5DA223FC802E0044F218 /* Measure.swift in Sources */,
+				784EC9CE23F88C96006E92DD /* TextProvider.swift in Sources */,
+				786B5DA623FC845F0044F218 /* MeasureView.swift in Sources */,
+				78246B6C23F9E63400439F20 /* ServiceLayer.swift in Sources */,
+				784EC9CA23F869C5006E92DD /* UserInfo.swift in Sources */,
+				78246B6F23F9F9BD00439F20 /* IAlertVCDelegate.swift in Sources */,
+				786B5DA923FC8F1B0044F218 /* XibView.swift in Sources */,
+				784EC98E23F84C6E006E92DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		784EC99323F84C6E006E92DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				784EC99423F84C6E006E92DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		784EC99823F84C70006E92DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				784EC99923F84C70006E92DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		784EC99C23F84C70006E92DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		784EC99D23F84C70006E92DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		784EC99F23F84C70006E92DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7CDD51EF9D468A9AC4FA7AD /* Pods-Energosbyt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C538825TBW;
+				INFOPLIST_FILE = Energosbyt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.Energosbyt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		784EC9A023F84C70006E92DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF427503E11FAFE2648BBF5 /* Pods-Energosbyt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C538825TBW;
+				INFOPLIST_FILE = Energosbyt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.Energosbyt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		784EC98523F84C6E006E92DD /* Build configuration list for PBXProject "Energosbyt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784EC99C23F84C70006E92DD /* Debug */,
+				784EC99D23F84C70006E92DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784EC99E23F84C70006E92DD /* Build configuration list for PBXNativeTarget "Energosbyt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784EC99F23F84C70006E92DD /* Debug */,
+				784EC9A023F84C70006E92DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 784EC98223F84C6E006E92DD /* Project object */;
+}

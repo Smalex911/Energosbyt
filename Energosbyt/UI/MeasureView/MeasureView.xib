@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeasureView" customModule="Energosbyt" customModuleProvider="target">
+            <connections>
+                <outlet property="labelCurrent" destination="LsV-Y5-99S" id="EGe-0p-Hq3"/>
+                <outlet property="labelLast" destination="JaQ-s9-fLr" id="4Cp-Hs-2WK"/>
+                <outlet property="labelTitle" destination="jau-Q7-rM9" id="8SY-Md-a7g"/>
+                <outlet property="textField" destination="7Uk-v7-IMT" id="cYR-7V-EZe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jau-Q7-rM9">
+                    <rect key="frame" x="16" y="21.5" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="S4e-1h-aNC">
+                    <rect key="frame" x="179" y="14.5" width="216" height="34"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaQ-s9-fLr">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsV-Y5-99S">
+                            <rect key="frame" x="58" y="0.0" width="42" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Uk-v7-IMT">
+                            <rect key="frame" x="116" y="0.0" width="100" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="1hE-Hy-Rzr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="S4e-1h-aNC" secondAttribute="trailing" constant="16" id="SQ4-bN-yHa"/>
+                <constraint firstItem="jau-Q7-rM9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="TRi-Uz-QMl"/>
+                <constraint firstItem="S4e-1h-aNC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jau-Q7-rM9" secondAttribute="trailing" priority="750" constant="8" id="W9W-Dw-vV5"/>
+                <constraint firstItem="S4e-1h-aNC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YsD-r1-eWw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jau-Q7-rM9" secondAttribute="bottom" priority="250" constant="8" id="azv-Xc-j70"/>
+                <constraint firstItem="jau-Q7-rM9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="msm-ae-L03"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="135.50724637681159" y="410.82589285714283"/>
+        </view>
+    </objects>
+</document>
