@@ -32,19 +32,27 @@ class HttpRpc {
         }
     }
     
-    func call(url: URL, method: HTTPMethod, headers: HTTPHeaders, parameters: Parameters? = nil, encoding: ParameterEncoding = URLEncoding.default, redirect: ((URLRequest?)->Void)? = nil, completion: @escaping ((DataResponse<String>?)->Void)) {
+    public let closureEventMonitor = ClosureEventMonitor()
+    
+    public lazy var session = Session(eventMonitors: [closureEventMonitor])
+    
+    func call(url: URL, method: HTTPMethod, headers: HTTPHeaders, parameters: Parameters? = nil, encoding: ParameterEncoding = URLEncoding.default, redirect: ((URLRequest?)->Void)? = nil, completion: @escaping ((AFDataResponse<String>?)->Void)) {
         
-        Alamofire.SessionManager.default.delegate.taskWillPerformHTTPRedirectionWithCompletion = { _, _, _, request, _ in
-            
+        var redirected = false
+        
+        let redirector = Redirector(behavior: .modify({ (_, request, _) -> URLRequest? in
+            redirected = true
             redirect?(request)
-            return
-        }
+            return nil
+        }))
         
-        Alamofire.SessionManager.default.requestWithoutCache(url, method: method, parameters: parameters, encoding: encoding, headers: headers).validate().responseString { [weak self] data in
+        session.requestWithoutCache(url, method: method, parameters: parameters, encoding: encoding, headers: headers).validate().redirect(using: redirector).responseString { [weak self] data in
             
             #if DEBUG
             self?.debugDataResponse(data)
             #endif
+            
+            guard !redirected else { return }
             
             self?.storeCookies()
             
@@ -60,7 +68,7 @@ class HttpRpc {
         }
     }
     
-    private func debugDataResponse<T>(_ response: DataResponse<T>) {
+    private func debugDataResponse<T>(_ response: AFDataResponse<T>) {
         
         let url = "\(response.request?.url?.scheme ?? "")://\(response.request?.url?.host ?? "")\(response.request?.url?.path ?? "")"
         let method = response.request?.httpMethod ?? ""
@@ -76,7 +84,7 @@ class HttpRpc {
         }
         
         var logStr = ""
-        if response.result.isSuccess {
+        if response.value != nil {
             logStr += "<<< BEGIN SUCCESS <<<"
         } else {
             logStr += "<<< BEGIN ERROR <<<"
@@ -86,7 +94,7 @@ class HttpRpc {
         logStr += (bodyStr != nil ? "\nRequest body: \(bodyStr ?? "")": "")
         logStr += "\nResponse code: \(response.response?.statusCode ?? (response.error as NSError?)?.code ?? 0)"
         logStr += "\nRequest headers: \(headersStr ?? "")"
-        if response.result.isSuccess {
+        if response.value != nil {
             logStr += "\n>>> END SUCCESS >>>"
         } else {
             logStr += "\nResponse error: \(response.error?.localizedDescription ?? "")"

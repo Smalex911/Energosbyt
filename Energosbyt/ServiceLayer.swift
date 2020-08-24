@@ -58,10 +58,12 @@ class ServiceLayer {
     
     func login(login: String, phone: String, completion: @escaping ((UserInfo?)->Void)) {
         
-        let headers: HTTPHeaders = [
+        var headers: HTTPHeaders = [
             "Origin": "https://lk.permenergosbyt.ru",
             "Content-Type": "application/x-www-form-urlencoded",
-            ].merging(commonHeaders, uniquingKeysWith: { (current, _) in current })
+        ]
+        
+        headers.appendIfKeyNotExist(commonHeaders)
         
         let parameters: Parameters = [
             "action": "login",
@@ -146,11 +148,12 @@ class ServiceLayer {
     
     func sendMeasures(_ measures: Measures, completion: @escaping (()->Void)) {
         
-        let headers: HTTPHeaders = [
+        var headers: HTTPHeaders = [
             "Origin": "https://lk.permenergosbyt.ru",
             "Content-Type": "application/x-www-form-urlencoded",
-            ].merging(commonHeaders, uniquingKeysWith: { (current, _) in current })
+        ]
         
+        headers.appendIfKeyNotExist(commonHeaders)
         
         var parameters: Parameters = ["action": "measures"]
         
@@ -183,10 +186,12 @@ class ServiceLayer {
     
     func payRequest(electSum: Double, electSoiSum: Double, email: String?, sendEmailCheque: Bool, completion: @escaping ((URL?)->Void)) {
         
-        let headers: HTTPHeaders = [
+        var headers: HTTPHeaders = [
             "Origin": "https://lk.permenergosbyt.ru",
             "Content-Type": "application/x-www-form-urlencoded",
-            ].merging(commonHeaders, uniquingKeysWith: { (current, _) in current })
+        ]
+        
+        headers.appendIfKeyNotExist(commonHeaders)
         
         let electSum = electSum.rounded(numberOfFraction: 2)
         let electSoiSum = electSoiSum.rounded(numberOfFraction: 2)
@@ -218,7 +223,7 @@ class ServiceLayer {
             networkStorage.call(url: showUrl, method: .post, headers: headers, parameters: parameters, redirect:
                 { request in
                     completion(request?.url)
-                }, completion:
+            }, completion:
                 { [weak self] data in
                     let document = data?.preparedDocument
                     

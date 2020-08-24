@@ -9,7 +9,8 @@
 import Alamofire
 import SwiftSoup
 
-extension Alamofire.SessionManager {
+extension Session {
+    
     @discardableResult
     open func requestWithoutCache(
         _ url: URLConvertible,
@@ -19,7 +20,6 @@ extension Alamofire.SessionManager {
         headers: HTTPHeaders? = nil)
         -> DataRequest
     {
-        
         var originalRequest: URLRequest?
         
         do {
@@ -33,7 +33,7 @@ extension Alamofire.SessionManager {
     }
 }
 
-extension DataResponse where Value == String {
+extension AFDataResponse where Success == String {
     
     var preparedDocument: Document? {
         guard let html = value else {
@@ -48,5 +48,16 @@ extension DataResponse where Value == String {
             print("error")
         }
         return nil
+    }
+}
+
+extension HTTPHeaders {
+    
+    mutating func appendIfKeyNotExist(_ headers: HTTPHeaders) {
+        headers.forEach { header in
+            if !contains(header) {
+                add(header)
+            }
+        }
     }
 }
